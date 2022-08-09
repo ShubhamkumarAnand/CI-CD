@@ -8,4 +8,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: node -v
+      - name: Build the Project
+        run: npm run build
+      - name: Setup Finished
+        run: echo "Successfully build the project"
