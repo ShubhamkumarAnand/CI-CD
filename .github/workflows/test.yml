@@ -9,6 +9,6 @@ jobs:
         with:
           node-version: 16
       - name: Build the Project
-        run: npm build
+        run: npx run build
       - name: Setup Finished
         run: echo "Successfully build the project"
