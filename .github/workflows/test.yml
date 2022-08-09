@@ -4,5 +4,5 @@ jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World!!"
-      - run: echo "Learning the CI/CD"
+      - uses: actions/checkout@v3
+      - run: tree
