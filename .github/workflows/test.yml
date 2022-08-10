@@ -18,7 +18,7 @@ jobs:
           mkdir .vercel
           cd .vercel
           touch project.json
-          echo "{"orgId":"GsufK1gEBBwXPi8gZ1oReqJX","projectId":"prj_X5bq5NcUme2X6Xaahb0tVLSdgDz7"}" > project.json
+          echo '{"projectId":"prj_X5bq5NcUme2X6Xaahb0tVLSdgDz7","orgId":"GsufK1gEBBwXPi8gZ1oReqJX"}' > project.json
       - name: Deploying the project
         run: yarn deploy
       - name: Setup Finished
