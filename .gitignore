@@ -1,4 +1,5 @@
-# ignore File 
+# ignore File
 
 node_modules
 /dist
+.vscode
