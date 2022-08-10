@@ -1,2 +1,4 @@
+# ignore File 
+
 node_modules
 /dist
