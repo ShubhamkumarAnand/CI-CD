@@ -7,8 +7,8 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
-		"deploy": "vc dist --prod --confirm --token=$VERCEL_ID"
-  },
+		"deploy": "vc dist --prod --yes --token=$VERCEL_ID"
+	},
 	"dependencies": {
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
