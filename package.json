@@ -7,7 +7,7 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
-		"deploy": "vc build --prod --confirm --token=wPQ9XnxcdxJBR854AAUQmsFx"
+		"deploy": "vc dist --prod --confirm --token=wPQ9XnxcdxJBR854AAUQmsFx"
 	},
 	"dependencies": {
 		"react": "^18.2.0",
