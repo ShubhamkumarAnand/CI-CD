@@ -13,16 +13,16 @@ jobs:
       - name: Build the Project
         run: npm run build
       - name: Sets the vercel env
+        env:
+          VERCEL_PROJECT_ID: ${{secrets.VERCEL_PROJECT_ID}}
+          VERCEL_ORG_ID: ${{secrets.VERCEL_ORG_ID}}
+          VERCEL_ID: ${{secrets.VERCEL_ID}}
         run: |
           cd dist
           mkdir .vercel
           cd .vercel
           touch project.json
           echo "{\"projectId\":\"$VERCEL_PROJECT_ID\",\"orgId\":\"$VERCEL_ORG_ID\"}" > project.json
-        env:
-          VERCEL_PROJECT_ID: ${{secrets.VERCEL_PROJECT_ID}}
-          VERCEL_ORG_ID: ${{secrets.VERCEL_ORG_ID}}
-          VERCEL_ID: ${{secrets.VERCEL_ID}}
       - name: Deploying the project
         run: yarn deploy
       - name: Setup Finished
